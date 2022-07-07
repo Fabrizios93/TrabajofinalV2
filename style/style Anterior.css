@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap')
+
+* {
+	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/mapa.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size:cover;
+	overflow-x: hidden;
+}
+
+	nav{
+		display: flex;
+		margin-bottom:2%;
+		width: 100%;
+		justify-content: space-between;
+		align-content: center;
+		grid-area: nav;
+	}
+
+	nav a img{
+	display: flex;
+	flex-direction: row;
+	padding:0;
+	width:100%;
+	height: auto;
+	flex-grow:0.5;
+	}
+
+	nav ul li{
+	display: inline-flex;
+	flex-direction: row-reverse;
+	font-size: 230%;
+	list-style-type: none;
+	text-align: center ;
+	margin: 20px;
+	padding: 20px;
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		color: #BD2E2E;
+	}
+
+header{
+	display: flex;
+	grid-area: video;
+	width: 80%;
+}
+
+
+main section a img{
+	width: 100%;
+	height:auto;
+	opacity: 100;
+	grid-area: imagen1;
+}
+
+main section div a img{
+	width: 100%;
+	opacity: 100;
+	grid-area: imagen2;
+}
+
+main section img{
+	width: 100%;
+	height: 100%;
+	opacity: 100;
+	grid-area: imagen;
+}
+
+main section div{
+	display: block;
+	line-height: 100%;
+	border-width: 100%;
+	grid-area: comentarios;
+	width: 100%;
+}
+
+h1,h2,h3{
+	color: #BD2E2E;
+	font-size:3rem;
+	font-family: cursive;
+	padding: 2rem;
+}
+
+h1{
+	margin-top: 2%;
+}
+
+p{
+	font-family: cursive;
+	color: black;
+	font-size: 50%;
+}
+
+
+section a img{
+	width:100%;
+	height:100%;
+}
+
+
+form{
+	background-color: rgba(86, 84, 84,0.6);
+}
+
+footer{
+	grid-area: footer;
+}
+
+
+footer a img{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+}
+
+
+
+/* Camelcase  */
+
+.textCenter{
+	text-align: center;
+}
+
+.textBold {
+	font-weight: 500px;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.bgDark{
+	background-color: rgb(56, 3, 3);
+}
+
+.bgLigh{
+	background-color: rgb(86, 84, 84);
+}
+
+.boxBorder{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15%;
+	border: double 2px #BD2E2E;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: rgba(56, 3, 3,0.2)
+}
+
+.pie{
+	text-align: right;
+	font-size: 200%;
+	margin: 1%;
+	display:flex;
+	font-family: cursive;
+	flex-direction: row-reverse;
+	align-self: flex-start;
+}
+
+.pieIcon{
+	display: inline-block ;
+	width: 5%;
+}
+
+.removeBg{
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+}
+
+.imagineSize{
+	width: 400px;
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	text-align: center;
+}
+
+.position{
+	display: flex;
+	width: 60%;
+	margin-left: 50%;
+	padding-bottom: 300%;
+	align-content: flex-start;
+	align-items: flex-start;
+
+}
+
+.pieInde{
+	display: inline-flex;
+	width: 4%;
+}
+
+.pieIndex{
+	display: inline-flex;
+	display: inline-block;
+	font-size: 200%;
+}
+
+.ContactoLetter{
+	color: white;
+	font-family: cursive;
+	font-size: 15px;
+}
+
+.pSize{
+	font-family: cursive;
+	color: black;
+	text-align: center;
+	text-orientation: center;
+	font-size: 150%;
+	line-height: normal;
+	padding: 5%;
+	width: 80%;
+	height: 100%;
+}
+
+.pSize2{
+	font-family: cursive;
+	color: black;
+	text-align: center;
+	text-orientation: center;
+	font-size: 150%;
+	line-height: normal;
+}
+
+
+.bgDarkSize{
+	background-color: rgb(56, 3, 3);
+	font-size: 400%;
+	width: 100%;
+}
+
+.bgDarkSize2{
+	background-color: rgb(56, 3, 3);
+	font-size: 200%;
+	width: 100%;
+}
+
+
+
+.boxBorderone{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	height: auto;
+	margin: 10%;
+	padding: 2% 2%;
+	border: double 2px #BD2E2E;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: rgba(56, 3, 3,0.2);
+	grid-area: one;
+	justify-content: space-between;
+	align-content: space-between;
+
+}
+
+
+
+/* Grid */
+
+#grid-views{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 100%;
+	grid-template-rows: 11% 30% 24% 24% 1%;
+	grid-template-areas: 
+	"nav"
+	"imagen"
+	"comentarios"
+	"comentarios"
+	"footer"
+}
+
+#grid-index{
+	display: grid;
+	grid-template-columns:100%;
+	width: 100%;
+	height: auto;
+	grid-row-gap: 5%;
+	grid-template-rows: 1% 18% 10% 20% 20% 1%;
+	grid-template-areas:
+	"nav"
+	"video"
+	"comentarios"
+	"imagen"
+	"imagen2"
+	"footer"
+}
+
+
+@media only screen and (min-widht: 300px){
+	#grid-index{
+		width:100%;
+	}
+}
+
+
+@media only screen and (min-widht: 300px){
+	#grid-views{
+		width:100%;
+	}
+}
+
+

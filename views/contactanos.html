@@ -1,0 +1,161 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KamarTaj- Viajes Extraordinarios</title>
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" href="../style/bootstrap.min.css">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+
+<body>
+	<!---Empieza Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">
+				<img src="../Img/logo.jpg" alt="logo de KamarTaj viajes diferentes" class="imagineSize">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page"
+							href="../views/historia y recorrido.html">Historia y
+							Recorridos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../views/consideraciones.html">Consideraciones</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../views/paquetes.html">Paquetes</a>
+					</li>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!---Termina Navbar-->
+	<form>
+		<fieldset class="formSize">
+			<legend class="ContactoLetter bgDarkSize">Informacion Personal</legend>
+			<div class="mb-3">
+				<label for="nombre" class="form-label">Nombre y Apellido</label>
+				<input type="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<div class="mb-3">
+				<label for="email" class="form-label">Correo Electronico</label>
+				<input type="email" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="mb-3">
+				<label for="tel" class="form-label">Telefono</label>
+				<input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<div class="mb-3">
+				<label for="direccion" class="form-label">Direccion</label>
+				<input type="direccion" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="mb-3">
+				<label for="ciudad" class="form-label">Ciudad</label>
+				<input type="ciudad" class="form-control" id="exampleInputPassword1">
+			</div>
+			<select class="form-select" aria-label="Default select example">
+				<option selected>Provincia</option>
+				<option value="Cordoba"> Cordoba</option>
+				<option value="Buenos Aires">Buenos Aires </option>
+				<option value="CABA"> CABA</option>
+				<option value="Formosa">Formosa</option>
+				<option value="Jujuy">Jujuy</option>
+				<option value="Salta">Salta</option>
+				<option value="Catamarca"> Catamarca</option>
+				<option value="San Juan">San Juan</option>
+				<option value="Mendoza">Mendoza</option>
+				<option value="San Luis">San Luis</option>
+				<option value="Santa Fe">Santa Fe</option>
+				<option value="La Pampa">La Pampa</option>
+				<option value="Neuquen">Neuquen</option>
+				<option value="Rio Negro">Rio Negro</option>
+				<option value="Chubut">Chubut</option>
+				<option value="Chaco">Chaco</option>
+				<option value="Misiones">Misiones</option>
+				<option value="Corrientes">Corrientes</option>
+				<option value="Entre Rios">Entre Rios</option>
+				<option value="Santa Cruz">Santa Cruz</option>
+				<option value="Tierra del Fuego">Tierra del Fuego</option>
+				<option value="Santiago del Estero">Santiago del Estero</option>
+				<option value="La Rioja">La Rioja</option>
+				<option value="Tucuman">Tucuman</option>
+			</select>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+				<label class="form-check-label" for="flexRadioDefault1">
+					Mayor de 18 años
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+				<label class="form-check-label" for="flexRadioDefault2">
+					Menor de 18 años
+				</label>
+			</div>
+		</fieldset>
+		<fieldset class="formSize">
+			<legend class="ContactoLetter bgDarkSize">Informacion de Salud</legend>
+			<label for="Salud" class="ContactoLetter">Posee problemas de Salud</label>
+			<select name="" id="Salud">
+				<option value="Si">Si</option>
+				<option value="No">No </option>
+			</select>
+			<label for="Temas Salud" class="ContactoLetter">Cuales?</label>
+			<textarea name=" " id="Temas Salud" cols="80" rows="4"></textarea>
+		</fieldset>
+		<div class="formSize">
+			<label for="Mensaje" class="ContactoLetter bgDarkSize ">Deje su mensaje</label>
+			<textarea name=" " id="Mensaje" cols="35" rows="15"></textarea>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+			<button type="reset" class="btn btn-primary">Cancelar</button>
+		</div>
+	</form>
+	</main>
+	<footer>
+		<div>
+			<a href="https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" class="pieInde"></a>
+			<a href="https://www.twitter.com/" target="_blank"><img src="../img/twitter.png" class="pieInde"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" class="pieInde"></a>
+		</div>
+		<div class="pieIndex">
+			<strong>
+				Direccion: Av. Rivadavia 380
+				Cordoba
+				Cordoba- Argentina
+			</strong>
+			<strong>
+				Informacion:
+				(0351) 155678954
+				Karma@travel.com
+			</strong>
+		</div>
+
+		<section class="sectionSize">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0737022652975!2d-64.1807139!3d-31.41209539999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a29d654e11c3%3A0x35529561fee1e420!2sRivadavia%20380%2C%20X5021KEH%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1653945260992!5m2!1ses!2sar"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade" class="sectionSize"></iframe>
+		</section>
+
+		</section>
+	</footer>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
